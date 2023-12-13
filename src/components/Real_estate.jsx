@@ -1,0 +1,156 @@
+import { IoSearch } from "react-icons/io5";
+import { MdMaximize } from "react-icons/md";
+import { VscSettings } from "react-icons/vsc";
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  module: {
+    breakpoint: { max: 4000, min: 0 },
+    items: 1,
+  },
+};
+
+const Real_estate = () => {
+  // eslint-disable-next-line react/prop-types
+  const CustomDot = ({ onClick, active }) => {
+    return (
+      <li className={active ? "" : "text-white"} onClick={() => onClick()}>
+        <MdMaximize className="text-5xl" />
+      </li>
+    );
+  };
+
+  return (
+    <main className="bg-gradient-to-t from-[#bce6e4] to-[#f8fdfe] lg:h-screen rounded-[560px] rounded-t-none mb-24">
+      <div className="container mx-auto px-3 lg:flex justify-between items-center h-full">
+        <div className="lg:lg:w-2/5">
+          <p className="text-[#0c4f37] md:text-xl text-lg font-medium">
+            REAL ESTATE
+          </p>
+          <h1 className="lg:text-6xl text-3xl font-medium pt-3 pb-12">
+            Find a perfect home you love..!
+          </h1>
+
+          <p className="text-[#808080] lg:text-base text-sm pb-8">
+            Etiam eget elementum elit. Aenean dignissim dapibus vestibulum.
+            Integer a dolor eu sapien sodales vulputate ac in purus.
+          </p>
+
+          <Carousel
+            className="z-20"
+            swipeable={true}
+            draggable={false}
+            responsive={responsive}
+            showDots
+            // renderButtonGroupOutside={true}
+            //   renderDotsOutside={true}
+            arrows
+            ssr={true}
+            infinite
+            autoPlay={true}
+            autoPlaySpeed={2000}
+            keyBoardControl={true}
+            customTransition="all .5"
+            transitionDuration={500}
+            customDot={<CustomDot />}
+          >
+            <div className="w-full">
+              <img src="/assets/demo.jpg" alt="" className="rounded-2xl" />
+            </div>
+            <div className="w-full">
+              <img src="/assets/demo.jpg" alt="" className="rounded-2xl" />
+            </div>
+            <div className="w-full">
+              <img src="/assets/demo.jpg" alt="" className="rounded-2xl" />
+            </div>
+            <div className="w-full">
+              <img src="/assets/demo.jpg" alt="" className="rounded-2xl" />
+            </div>
+          </Carousel>
+        </div>
+        <form className="bg-white shadow-2xl rounded-3xl py-8 lg:w-1/3 relative lg:mt-0 mt-12">
+          <div className="flex justify-between border-b border-[#aaaaaa] h-12 lg:px-8 px-3">
+            <button
+              type="button"
+              className="w-1/2 text-[#808080] focus:border-b-2 focus:text-[#0ca39a] focus:border-[#0ca39a] cursor-pointer"
+            >
+              For Sale
+            </button>
+            <button
+              type="button"
+              className="w-1/2 text-[#808080] focus:border-b-2 focus:text-[#0ca39a] focus:border-[#0ca39a] cursor-pointer"
+            >
+              For Rent
+            </button>
+          </div>
+          <div className="py-12 flex flex-col gap-8 lg:px-12 px-4">
+            <input
+              type="text"
+              placeholder="New York, San Francisco, etc"
+              className="h-16 outline-none rounded-3xl bg-[#f6f6f6] border border-[#e5e5e5] px-6"
+            />
+            <select
+              placeholder="Select Property Type"
+              className="h-16 outline-none rounded-3xl bg-[#f6f6f6] border border-[#e5e5e5] px-6"
+            >
+              <option>Select Property Type</option>
+            </select>
+            <select
+              placeholder="Select Rooms"
+              className="h-16 outline-none rounded-3xl bg-[#f6f6f6] border border-[#e5e5e5] px-6"
+            >
+              <option>Select Rooms</option>
+            </select>
+            <span className="flex items-center text-[#0ca39a] gap-x-2">
+              <VscSettings className="text-2xl" />
+              <p>Advance Search</p>
+            </span>
+            <button
+              type="button"
+              className="w-full flex justify-center items-center gap-x-2 rounded-full h-14 text-white bg-[#0ca39a]"
+            >
+              <IoSearch />
+              Search
+            </button>
+          </div>
+          <button className="bg-gradient-to-r from-[#8bd3ce] to-[#eff9f9] rounded-full h-12 w-12 cursor-auto absolute -top-2 -right-2"></button>
+        </form>
+      </div>
+
+      <div className="lg:flex justify-center lg:-mt-16 mt-4 gap-x-8 lg:px-0 px-3">
+        <div className="bg-white rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl">
+          <span className="flex items-center relative h-10 w-44">
+            {[...Array(6)].map((_, index) => (
+              <div key={index} className="lg:mr-7 mr-5 h-full">
+                <img
+                  src="/assets/person1.svg"
+                  alt=""
+                  className="w-10 h-10 rounded-full absolute bg-[#F2F2F2] border border-white"
+                />
+              </div>
+            ))}
+          </span>
+          <p className="w-36 md:text-xl font-medium">
+            72k+ Happy Customers
+          </p>
+        </div>
+
+        <div className="bg-white rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl lg:mt-0 mt-4">
+          <img
+            src="/assets/demo.jpg"
+            alt=""
+            className="w-12 h-12 rounded-full"
+          />
+          <p className="md:text-xl font-medium">
+            200+ New <br />
+            Listings Everyday!
+          </p>
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Real_estate;
