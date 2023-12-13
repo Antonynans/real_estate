@@ -187,7 +187,7 @@ const Real_estate = () => {
         </span>
 
         <div className="py-12">
-          <Marquee className="">
+          <Marquee>
             <img src="/assets/logo1.png" alt="" className="h-8 mr-16" />
             <img src="/assets/logo2.png" alt="" className="h-8 mr-16" />
             <img src="/assets/logo3.png" alt="" className="h-8 mr-16" />
