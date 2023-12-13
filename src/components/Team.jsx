@@ -10,44 +10,44 @@ const Team = () => {
       </h1>
 
       <section className="lg:flex items-center lg:grid-cols-none grid grid-cols-2 lg:gap-12 gap-8 justify-center">
-        <div>
+        <div className="lg:w-1/4">
           <img
             src="/assets/person1.svg"
             alt=""
-            className="lg:h-80 h-60 rounded-b-3xl rounded-tr-3xl rounded-tl-[50%] object-cover bg-[#cbcbc9]"
+            className="md:h-80 h-60 w-full rounded-b-3xl rounded-tr-3xl rounded-tl-[50%] object-cover bg-[#cbcbc9]"
           />
           <p className="text-center pt-4 md:text-2xl font-semibold">Brendom M</p>
           <p className="text-center pt-4 md:text-base text-sm text-[#0c4f37] font-semibold">
             CEO & Founder
           </p>
         </div>
-        <div>
+        <div className="lg:w-1/4">
           <img
-            src="/assets/person1.svg"
+            src="/assets/female1.jpg"
             alt=""
-            className="lg:h-80 h-60 rounded-b-3xl rounded-tr-3xl rounded-tl-[50%] object-cover bg-[#cbcbc9]"
+            className="md:h-80 h-60 w-full rounded-b-3xl rounded-tr-3xl rounded-tl-[50%] object-cover bg-[#cbcbc9]"
           />
           <p className="text-center pt-4 md:text-2xl font-semibold">Jodi J. Appleby</p>
           <p className="text-center pt-4 md:text-base text-sm text-[#0c4f37] font-semibold">
             Real Estate Developer
           </p>
         </div>
-        <div>
+        <div className="lg:w-1/4">
           <img
-            src="/assets/person1.svg"
+            src="/assets/image_2.jpg"
             alt=""
-            className="lg:h-80 h-60 rounded-b-3xl rounded-tr-3xl rounded-tl-[50%] object-cover bg-[#cbcbc9]"
+            className="md:h-80 h-60 w-full rounded-b-3xl rounded-tr-3xl rounded-tl-[50%] object-cover bg-[#cbcbc9]"
           />
           <p className="text-center pt-4 md:text-2xl font-semibold">Justin S. Meza</p>
           <p className="text-center pt-4 md:text-base text-sm text-[#0c4f37] font-semibold">
             Listing Agent
           </p>
         </div>
-        <div>
+        <div className="lg:w-1/4">
           <img
-            src="/assets/person1.svg"
+            src="/assets/female2.jpg"
             alt=""
-            className="lg:h-80 h-60 rounded-b-3xl rounded-tr-3xl rounded-tl-[50%] object-cover bg-[#cbcbc9]"
+            className="md:h-80 h-60 w-full rounded-b-3xl rounded-tr-3xl rounded-tl-[50%] object-cover bg-[#cbcbc9]"
           />
           <p className="text-center pt-4 md:text-2xl font-semibold">Susan T. Smith</p>
           <p className="text-center pt-4 md:text-base text-sm text-[#0c4f37] font-semibold">

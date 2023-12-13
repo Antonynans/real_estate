@@ -22,7 +22,7 @@ const Become_an_agent = () => {
         </button>
         </div>
         <button className="bg-gradient-to-r from-[#74cac5] to-[#26ada5] rounded-full h-20 w-20 cursor-auto absolute -top-6 right-10 z-10"></button>
-        <button className="bg-gradient-to-r from-[#74cac5] to-[#26ada5] rounded-full h-20 w-20 cursor-auto absolute xl:bottom-10 bottom-20 left-[25%] z-10"></button>
+        <button className="bg-gradient-to-r from-[#74cac5] to-[#26ada5] rounded-full h-20 w-20 cursor-auto absolute xl:bottom-10 bottom-20 lg:left-[19rem] left-8 z-10"></button>
       </div>
     </main>
   );

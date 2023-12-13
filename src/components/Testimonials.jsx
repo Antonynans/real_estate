@@ -35,9 +35,9 @@ const Testimonials = () => {
         </p>
         <div className="border-t border-[#d4d4d4] flex items-center py-4">
           <img
-            src="/assets/demo.jpg"
+            src="/assets/image_6.jpg"
             alt=""
-            className="rounded-full h-12 w-12"
+            className="rounded-full h-12 w-12 object-cover"
           />
           <span className="lg:flex items-center justify-between w-full gap-x-4 font-medium pl-3">
             <p>Barbara D. Smith</p>

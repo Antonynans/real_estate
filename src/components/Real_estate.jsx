@@ -4,6 +4,8 @@ import { VscSettings } from "react-icons/vsc";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import ImageMarquee from "./Marquee";
+import { FaPlus } from "react-icons/fa";
 
 const responsive = {
   module: {
@@ -22,9 +24,13 @@ const Real_estate = () => {
     );
   };
 
+  const imageUrls = ['/assets/logo1.png', '/assets/logo2.png', '/assets/logo3.png', '/assets/logo4.png', '/assets/logo5.png', '/assets/logo6.png'];
+ const imageUrlMap = ['/assets/image_2.jpg', '/assets/image_3.jpg', '/assets/image_4.jpg', '/assets/image_5.jpg', '/assets/image_6.jpg'];
   return (
-    <main className="bg-gradient-to-t from-[#bce6e4] to-[#f8fdfe] lg:h-screen rounded-[560px] rounded-t-none mb-24">
-      <div className="container mx-auto px-3 lg:flex justify-between items-center h-full">
+    <main className=" mb-12">
+      <div className="bg-gradient-to-t from-[#bce6e4] to-[#f8fdfe] rounded-[560px] rounded-t-none">
+
+      <div className="container mx-auto px-3 lg:flex justify-between items-center h-screen">
         <div className="lg:lg:w-2/5">
           <p className="text-[#0c4f37] md:text-xl text-lg font-medium">
             REAL ESTATE
@@ -56,18 +62,13 @@ const Real_estate = () => {
             transitionDuration={500}
             customDot={<CustomDot />}
           >
-            <div className="w-full">
-              <img src="/assets/demo.jpg" alt="" className="rounded-2xl" />
+            {[...Array(4)].map((_, index) => (
+              <div key={index} className="w-full">
+              <img src="/assets/image_1.jpg" alt="" className="rounded-2xl" />
             </div>
-            <div className="w-full">
-              <img src="/assets/demo.jpg" alt="" className="rounded-2xl" />
-            </div>
-            <div className="w-full">
-              <img src="/assets/demo.jpg" alt="" className="rounded-2xl" />
-            </div>
-            <div className="w-full">
-              <img src="/assets/demo.jpg" alt="" className="rounded-2xl" />
-            </div>
+            ))}
+            
+          
           </Carousel>
         </div>
         <form className="bg-white shadow-2xl rounded-3xl py-8 lg:w-1/3 relative lg:mt-0 mt-12">
@@ -118,20 +119,33 @@ const Real_estate = () => {
           <button className="bg-gradient-to-r from-[#8bd3ce] to-[#eff9f9] rounded-full h-12 w-12 cursor-auto absolute -top-2 -right-2"></button>
         </form>
       </div>
+      </div>
 
-      <div className="lg:flex justify-center lg:-mt-16 mt-4 gap-x-8 lg:px-0 px-3">
+      <div className="lg:hidden block container mx-auto px-3 py-8 mt-64">
+        <span className="lg:flex items-end gap-x-60 lg:text-left text-center">
+          <button className="lg:block hidden bg-gradient-to-r from-[#8bd3ce] to-[#eff9f9] rounded-full h-24 w-24 cursor-auto"></button>
+          <p className="text-[#a5a5a5] ">Trusted by 100+ companies across the globe!</p></span>
+
+          <div className="py-12">
+      <ImageMarquee images={imageUrls} speed={10} />
+    </div>
+      </div>
+
+      <div className="lg:flex justify-center lg:-mt-16 gap-x-8 lg:px-0 px-3">
         <div className="bg-white rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl">
           <span className="flex items-center relative h-10 w-44">
-            {[...Array(6)].map((_, index) => (
+            {imageUrlMap.map((img, index) => (
               <div key={index} className="lg:mr-7 mr-5 h-full">
                 <img
-                  src="/assets/person1.svg"
+                  src={img}
                   alt=""
-                  className="w-10 h-10 rounded-full absolute bg-[#F2F2F2] border border-white"
+                  className="w-10 h-10 rounded-full object-cover absolute bg-[#F2F2F2] border border-white"
                 />
               </div>
             ))}
-          </span>
+            <button className=" bg-black w-8 h-8 rounded-full text-white relative flex items-center justify-center">
+            <FaPlus  />
+            </button></span>
           <p className="w-36 md:text-xl font-medium">
             72k+ Happy Customers
           </p>
@@ -139,7 +153,7 @@ const Real_estate = () => {
 
         <div className="bg-white rounded-full py-4 lg:px-8 px-3 flex items-center justify-center gap-x-4 shadow-2xl lg:mt-0 mt-4">
           <img
-            src="/assets/demo.jpg"
+            src="/assets/image_7.jpg"
             alt=""
             className="w-12 h-12 rounded-full"
           />
@@ -149,6 +163,17 @@ const Real_estate = () => {
           </p>
         </div>
       </div>
+
+      <div className="lg:block hidden container mx-auto px-3 py-16">
+        <span className="lg:flex items-end gap-x-60 lg:text-left text-center">
+          <button className="lg:block hidden bg-gradient-to-r from-[#8bd3ce] to-[#eff9f9] rounded-full h-24 w-24 cursor-auto"></button>
+          <p className="text-[#a5a5a5] ">Trusted by 100+ companies across the globe!</p></span>
+
+          <div className="py-12">
+      <ImageMarquee images={imageUrls} speed={10} />
+    </div>
+      </div>
+
     </main>
   );
 };

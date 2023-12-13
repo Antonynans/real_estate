@@ -1,7 +1,6 @@
 const Neighborhood_properties = () => {
   return (
     <main className="container mx-auto px-3 lg:pt-24">
-      {/* <div className=""> */}
         <span className="flex justify-center pb-12">
           <button className="bg-gradient-to-r from-[#8bd3ce] to-[#eff9f9] rounded-full h-12 w-12 cursor-auto"></button>
         </span>
@@ -15,9 +14,9 @@ const Neighborhood_properties = () => {
         <section className="grid md:grid-cols-7 grid-cols-2 md:gap-12 gap-4 pb-12">
           <div className="relative md:col-span-2">
             <img
-              src="/assets/demo.jpg"
+              src="/assets/image_15.jpg"
               alt=""
-              className="rounded-3xl object-cover md:h-80 h-40"
+              className="rounded-3xl object-cover md:h-80 h-40 w-full"
             />
             <span className="absolute md:bottom-8 bottom-4 md:left-8 left-4">
               <p className="text-[#a0a1a1] md:text-5xl text-2xl font-semibold md:pb-3">
@@ -30,9 +29,9 @@ const Neighborhood_properties = () => {
           </div>
           <div className="relative md:col-span-2">
             <img
-              src="/assets/demo.jpg"
+              src="/assets/image_16.jpg"
               alt=""
-              className="rounded-3xl object-cover md:h-80 h-40"
+              className="rounded-3xl object-cover md:h-80 h-40 w-full"
             />
             <span className="absolute md:bottom-8 bottom-4 md:left-8 left-4">
               <p className="text-[#a0a1a1] md:text-5xl text-2xl font-semibold md:pb-3">
@@ -45,9 +44,9 @@ const Neighborhood_properties = () => {
           </div>
           <div className="relative md:col-span-3">
             <img
-              src="/assets/demo.jpg"
+              src="/assets/image_17.jpg"
               alt=""
-              className="rounded-3xl object-cover md:h-80 h-40"
+              className="rounded-3xl object-cover md:h-80 h-40 w-full"
             />
             <span className="absolute md:bottom-8 bottom-4 md:left-8 left-4">
               <p className="text-[#a0a1a1] md:text-5xl text-2xl font-semibold md:pb-3">
@@ -60,9 +59,9 @@ const Neighborhood_properties = () => {
           </div>
           <div className="relative md:col-span-3">
             <img
-              src="/assets/demo.jpg"
+              src="/assets/image_18.jpg"
               alt=""
-              className="rounded-3xl object-cover md:h-80 h-40"
+              className="rounded-3xl object-cover md:h-80 h-40 w-full"
             />
             <span className="absolute md:bottom-8 bottom-4 md:left-8 left-4">
               <p className="text-[#a0a1a1] md:text-5xl text-2xl font-semibold md:pb-3">
@@ -75,7 +74,7 @@ const Neighborhood_properties = () => {
           </div>
           <div className="relative md:col-span-4">
             <img
-              src="/assets/demo.jpg"
+              src="/assets/image_19.jpg"
               alt=""
               className="rounded-3xl object-cover md:h-80 h-40 w-full"
             />
@@ -93,7 +92,6 @@ const Neighborhood_properties = () => {
         <span className="flex justify-end pb-12 w-4/5">
           <button className="bg-gradient-to-r from-[#8bd3ce] to-[#eff9f9] rounded-full h-24 w-24 cursor-auto"></button>
         </span>
-      {/* </div> */}
     </main>
   );
 };

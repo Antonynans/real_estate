@@ -67,8 +67,7 @@ const Latest_property = () => {
           responsive={responsive}
           ssr={true}
           infinite
-          // autoPlay={true}
-          autoPlaySpeed={2000}
+          autoPlay={false}
           keyBoardControl={true}
           customTransition="all .5"
           transitionDuration={500}
@@ -76,7 +75,7 @@ const Latest_property = () => {
           <div>
             <div className="relative h-80 sm:w-80">
               <img
-                src="/assets/demo.jpg"
+                src="/assets/image_11.jpg"
                 alt=""
                 className="rounded-3xl h-full w-full object-cover"
               />
@@ -102,7 +101,7 @@ const Latest_property = () => {
           <div>
             <div className="relative h-80 sm:w-80">
               <img
-                src="/assets/demo.jpg"
+                src="/assets/image_12.jpg"
                 alt=""
                 className="rounded-3xl h-full w-full object-cover"
               />
@@ -128,7 +127,7 @@ const Latest_property = () => {
           <div>
             <div className="relative h-80 sm:w-80">
               <img
-                src="/assets/demo.jpg"
+                src="/assets/image_13.jpg"
                 alt=""
                 className="rounded-3xl h-full w-full object-cover"
               />
@@ -156,7 +155,7 @@ const Latest_property = () => {
           <div>
             <div className="relative h-80 sm:w-80">
               <img
-                src="/assets/demo.jpg"
+                src="/assets/image_14.jpg"
                 alt=""
                 className="rounded-3xl h-full w-full object-cover"
               />
@@ -185,7 +184,7 @@ const Latest_property = () => {
         <div className='pt-8'>
             <div className="relative h-80 sm:w-80">
               <img
-                src="/assets/demo.jpg"
+                src="/assets/image_11.jpg"
                 alt=""
                 className="rounded-3xl h-full w-full object-cover"
               />
@@ -211,7 +210,7 @@ const Latest_property = () => {
           <div className='pt-8'>
             <div className="relative h-80 sm:w-80">
               <img
-                src="/assets/demo.jpg"
+                src="/assets/image_12.jpg"
                 alt=""
                 className="rounded-3xl h-full w-full object-cover"
               />
@@ -237,7 +236,7 @@ const Latest_property = () => {
           <div className='pt-8'>
             <div className="relative h-80 sm:w-80">
               <img
-                src="/assets/demo.jpg"
+                src="/assets/image_13.jpg"
                 alt=""
                 className="rounded-3xl h-full w-full object-cover"
               />
@@ -265,7 +264,7 @@ const Latest_property = () => {
           <div className='pt-8'>
             <div className="relative h-80 sm:w-80">
               <img
-                src="/assets/demo.jpg"
+                src="/assets/image_14.jpg"
                 alt=""
                 className="rounded-3xl h-full w-full object-cover"
               />
