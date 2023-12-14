@@ -19,7 +19,7 @@ const Neighborhood_properties = () => {
               className="rounded-3xl object-cover md:h-80 h-40 w-full"
             />
             <span className="absolute md:bottom-8 bottom-4 md:left-8 left-4">
-              <p className="text-[#a0a1a1] md:text-5xl text-2xl font-semibold md:pb-3">
+              <p className="text-white md:text-5xl text-2xl font-semibold md:pb-3">
                 216
               </p>
               <p className="text-white lg:text-xl md:text-base text-sm">
@@ -34,7 +34,7 @@ const Neighborhood_properties = () => {
               className="rounded-3xl object-cover md:h-80 h-40 w-full"
             />
             <span className="absolute md:bottom-8 bottom-4 md:left-8 left-4">
-              <p className="text-[#a0a1a1] md:text-5xl text-2xl font-semibold md:pb-3">
+              <p className="text-white md:text-5xl text-2xl font-semibold md:pb-3">
                 141
               </p>
               <p className="text-white lg:text-xl md:text-base text-sm">
@@ -49,7 +49,7 @@ const Neighborhood_properties = () => {
               className="rounded-3xl object-cover md:h-80 h-40 w-full"
             />
             <span className="absolute md:bottom-8 bottom-4 md:left-8 left-4">
-              <p className="text-[#a0a1a1] md:text-5xl text-2xl font-semibold md:pb-3">
+              <p className="text-white md:text-5xl text-2xl font-semibold md:pb-3">
                 212
               </p>
               <p className="text-white lg:text-xl md:text-base text-sm">
@@ -64,7 +64,7 @@ const Neighborhood_properties = () => {
               className="rounded-3xl object-cover md:h-80 h-40 w-full"
             />
             <span className="absolute md:bottom-8 bottom-4 md:left-8 left-4">
-              <p className="text-[#a0a1a1] md:text-5xl text-2xl font-semibold md:pb-3">
+              <p className="text-white md:text-5xl text-2xl font-semibold md:pb-3">
                 183
               </p>
               <p className="text-white lg:text-xl md:text-base text-sm">
@@ -79,7 +79,7 @@ const Neighborhood_properties = () => {
               className="rounded-3xl object-cover md:h-80 h-40 w-full"
             />
             <span className="absolute md:bottom-8 bottom-4 md:left-8 left-4">
-              <p className="text-[#a0a1a1] md:text-5xl text-2xl font-semibold md:pb-3">
+              <p className="text-white md:text-5xl text-2xl font-semibold md:pb-3">
                 112
               </p>
               <p className="text-white lg:text-xl md:text-base text-sm">

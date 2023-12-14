@@ -47,13 +47,13 @@ const Latest_property = () => {
           </p>
         </div>
         <div className="flex gap-x-4 lg:w-2/5 lg:pt-0 pt-6">
-          <button className="text-[#0ca39a] rounded-full border border-[#0ca39a] px-6 py-2 focus:bg-[#0ca39a] focus:text-white">
+          <button className="text-[#0ca39a] rounded-full border border-[#0ca39a] px-6 py-2 hover:bg-[#0ca39a] hover:text-white focus:bg-[#0ca39a] focus:text-white">
             All
           </button>
-          <button className="text-[#0ca39a] rounded-full border border-[#0ca39a] px-6 py-2 focus:bg-[#0ca39a] focus:text-white">
+          <button className="text-[#0ca39a] rounded-full border border-[#0ca39a] px-6 py-2 hover:bg-[#0ca39a] hover:text-white focus:bg-[#0ca39a] focus:text-white">
             Sell
           </button>
-          <button className="text-[#0ca39a] rounded-full border border-[#0ca39a] px-6 py-2 focus:bg-[#0ca39a] focus:text-white">
+          <button className="text-[#0ca39a] rounded-full border border-[#0ca39a] px-6 py-2 hover:bg-[#0ca39a] hover:text-white focus:bg-[#0ca39a] focus:text-white">
             Rent
           </button>
         </div>

@@ -2,7 +2,7 @@ import { FaHome } from "react-icons/fa";
 
 const Who_are_we = () => {
   return (
-    <main className="container mx-auto lg:flex px-3 mb-12">
+    <main className="container mx-auto lg:flex px-3 mb-12 lg:pt-0 pt-8">
       <div className="lg:w-2/5">
         <p className="text-[#0c4f37] md:text-xl text-lg font-medium">
           WHO ARE WE
@@ -61,7 +61,7 @@ const Who_are_we = () => {
             alt=""
             className="w-full h-2/5 rounded-3xl shadow-md object-cover"
           />
-          <button className="bg-gradient-to-tr from-[#e8eaf7] to-[#858cc8] rounded-full h-12 w-12 cursor-auto absolute -bottom-8 left-16"></button>
+          <button className="bg-gradient-to-r from-[#8bd3ce] to-[#eff9f9] rounded-full h-12 w-12 cursor-auto absolute -bottom-8 left-16"></button>
         </div>
       </div>
       <div className="lg:hidden block pt-4 py-16">

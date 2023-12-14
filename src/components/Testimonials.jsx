@@ -18,10 +18,10 @@ const Testimonials = () => {
         </p>
 
         <div className="lg:flex hidden gap-x-12 mt-16">
-          <button className="w-12 h-12 rounded-full border border-[#0c4f37] flex justify-center items-center text-2xl text-[#0c4f37]">
+          <button className="w-12 h-12 rounded-full border border-[#0ca39a] flex justify-center items-center text-2xl text-[#0ca39a] focus:bg-[#0ca39a] focus:text-white hover:bg-[#0ca39a] hover:text-white">
             <IoArrowBack />
           </button>
-          <button className="w-12 h-12 rounded-full border border-[#0c4f37] flex justify-center items-center text-2xl text-[#0c4f37]">
+          <button className="w-12 h-12 rounded-full border border-[#0ca39a] flex justify-center items-center text-2xl text-[#0ca39a] focus:bg-[#0ca39a] focus:text-white hover:bg-[#0ca39a] hover:text-white">
             <IoArrowForward />
           </button>
         </div>

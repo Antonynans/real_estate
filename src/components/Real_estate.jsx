@@ -30,10 +30,12 @@ const Real_estate = () => {
     "/assets/image_5.jpg",
     "/assets/image_6.jpg",
   ];
+  const images = ["/assets/image_1.jpg", "/assets/image_9.jpg", "/assets/image_10.jpg", "/assets/image_13.jpg"];
+
   return (
     <main className=" mb-12">
       <div className="bg-gradient-to-t from-[#bce6e4] to-[#f8fdfe] rounded-[560px] rounded-t-none">
-        <div className="container mx-auto px-3 lg:flex justify-between items-center h-screen">
+        <div className="container mx-auto px-3 lg:flex justify-between items-center lg:h-screen">
           <div className="lg:lg:w-2/5">
             <p className="text-[#0c4f37] md:text-xl text-lg font-medium">
               REAL ESTATE
@@ -53,8 +55,6 @@ const Real_estate = () => {
               draggable={false}
               responsive={responsive}
               showDots
-              // renderButtonGroupOutside={true}
-              //   renderDotsOutside={true}
               arrows
               ssr={true}
               infinite
@@ -65,10 +65,10 @@ const Real_estate = () => {
               transitionDuration={500}
               customDot={<CustomDot />}
             >
-              {[...Array(4)].map((_, index) => (
+              {images.map((img, index) => (
                 <div key={index} className="w-full">
                   <img
-                    src="/assets/image_1.jpg"
+                    src={img}
                     alt=""
                     className="rounded-2xl"
                   />
@@ -126,7 +126,7 @@ const Real_estate = () => {
         </div>
       </div>
 
-      <div className="lg:hidden block container mx-auto px-3 py-8 mt-64">
+      <div className="lg:hidden block container mx-auto px-3 py-8">
         <span className="lg:flex items-end gap-x-60 lg:text-left text-center">
           <button className="lg:block hidden bg-gradient-to-r from-[#8bd3ce] to-[#eff9f9] rounded-full h-24 w-24 cursor-auto"></button>
           <p className="text-[#a5a5a5] ">
@@ -136,12 +136,12 @@ const Real_estate = () => {
 
         <div className="py-12">
           <Marquee>
-            <img src="/assets/logo1.png" alt="" />
-            <img src="/assets/logo2.png" alt="" />
-            <img src="/assets/logo3.png" alt="" />
-            <img src="/assets/logo4.png" alt="" />
-            <img src="/assets/logo5.png" alt="" />
-            <img src="/assets/logo6.png" alt="" />
+            <img src="/assets/logo1.png" alt="" className="h-8 mr-4" />
+            <img src="/assets/logo2.png" alt="" className="h-8 mr-4" />
+            <img src="/assets/logo3.png" alt="" className="h-8 mr-4" />
+            <img src="/assets/logo4.png" alt="" className="h-8 mr-4" />
+            <img src="/assets/logo5.png" alt="" className="h-8 mr-4" />
+            <img src="/assets/logo6.png" alt="" className="h-8 mr-4" />
           </Marquee>
         </div>
       </div>
